@@ -6,7 +6,7 @@ const styles = StyleSheet.create({
   },
   text: {
     color: "white",
-    fontSize: 50,
+    fontSize: 0,
   },
   inputname: {
     color: 'black',
@@ -62,8 +62,8 @@ login:{
     height: 70, // Ajustando a altura da imagem
     marginRight: 10, // Adicionando uma margem à direita para separar a imagem do texto
     marginLeft: -10, // Movendo 10 pixels para a esquerda
-    bottom: 213,
-    left: 10,
+    bottom: 213, //Movendo 213 pixels para cima
+    left: 10, //Movendo 10 pixels para a esquerda
   },
   
 
