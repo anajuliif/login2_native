@@ -1,14 +1,28 @@
-import { Text, View, StyleSheet, Button } from "react-native";
-import styles from "../styles/StyleSheet";
+// Importa as bibliotecas necessárias do React e do React Native
+import React from 'react';
+import { View, Text, TextInput, Button } from 'react-native';
 
-export default function Componente2() {
-        btn = () => {
-          alert("Eu sou o Componente2");
-        };
+// Importa os estilos definidos externamente no arquivo stylescomponent
+import styles from '../styles/StyleSheet';
+
+// Define um componente funcional chamado Componentbtn
+const Componentbutton = () => {
+  
+  // Função btn() é chamada quando o botão é pressionado, exibindo um alerta simples
+  const btn = () => {
+    alert("Logado com Sucesso");
+  };
 
   return (
+    // Componente View representa um contêiner para organizar outros componentes
     <View style={styles.body}>
-     <Button onPress={btn} title="COMPONENTE 2 " />
+      
+      {/* Componente Button que, quando pressionado, chama a função btn() */}
+      <Button onPress={btn} style={styles.button} title="Login" />
+      
     </View>
   );
-}
+};
+
+// Exporta o componente para ser utilizado em outros arquivos
+export default Componentbutton;
